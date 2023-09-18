@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "allura";
+  src: url(../fonts/Allura/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #eeeeee;
+  background-color: #21201e;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+header {
+  height: 100vh;
+  background: url(../img/bg-slider-06.jpg) center/cover;
+  width: 100%;
+  position: relative;
+}
+header nav {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav ul #logo {
+  font-family: "allura", serif;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 2rem;
+}
+header nav ul li {
+  font-family: "roboto", sans-serif;
+  font-size: 0.8rem;
+}
+header nav ul i {
+  padding: 0 10px;
+}
+header .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+}
+header .header-content h2 {
+  font-size: 3rem;
+  font-family: "allura", serif;
+  color: #a67245;
+  line-height: 10px;
+}
+header .header-content h1 {
+  font-size: 4rem;
+  letter-spacing: 3px;
+  font-family: "poppins", sans-serif;
+  text-transform: uppercase;
+  margin: 0px 0 0 0;
+}
+header .header-content img {
+  margin: 20px auto 30px;
+  height: 30px;
+}
+header .header-content p {
+  font-family: "roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}/*# sourceMappingURL=index.css.map */

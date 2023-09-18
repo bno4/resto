@@ -1,0 +1,63 @@
+header {
+  height: 100vh;
+  background: url(../img/bg-slider-06.jpg) center/cover;
+  width: 100%;
+  position: relative;
+  nav {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      align-items: center;
+      #logo {
+        font-family: $font1;
+        text-transform: capitalize;
+        font-weight: 900;
+        font-size: 2rem;
+      }
+      li {
+        font-family: $font2;
+        font-size: 0.8rem;
+      }
+      i {
+        padding: 0 10px;
+      }
+    }
+  }
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // min-height: 100vh;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    h2 {
+      font-size: 3rem;
+      font-family: $font1;
+      color: $gold;
+      line-height: 10px;
+    }
+    h1 {
+      font-size: 4rem;
+      letter-spacing: 3px;
+      font-family: $font3;
+      text-transform: uppercase;
+      margin: 0px 0 0 0;
+    }
+    img {
+      margin: 20px auto 30px;
+      height: 30px;
+    }
+    p {
+      font-family: $font2;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+  }
+}
