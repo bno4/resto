@@ -18,12 +18,16 @@ $font3: "poppins", sans-serif;
 
 // colors
 $bg-color: #21201e;
-$color-brown: #a37144;
 $white1: #eeeeee;
 $gold: #a67245;
+$lightgray: #bdb9b8;
 
 // mixins
-
+@mixin goldTitle {
+  color: $gold;
+  font-family: allura, sans-serif;
+  text-transform: capitalize;
+}
 // global
 
 * {

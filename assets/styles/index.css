@@ -108,4 +108,197 @@ header .header-content p {
   font-family: "roboto", sans-serif;
   text-transform: uppercase;
   letter-spacing: 5px;
+}
+
+.store {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.store__left {
+  background: #eeeeee;
+}
+.store__left__text {
+  margin: 10px;
+  padding: 20px;
+  border: 1px dashed #a67245;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.store__left__text h2 {
+  color: #a67245;
+  font-family: allura, sans-serif;
+  text-transform: capitalize;
+}
+.store__left__text h3 {
+  font-family: "poppins", sans-serif;
+  color: #21201e;
+  text-transform: uppercase;
+}
+.store__left__text img {
+  margin: 20px auto;
+}
+.store__left__text p {
+  font-family: "roboto", sans-serif;
+  color: #21201e;
+  font-size: 0.8rem;
+}
+.store__left__text .avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.store__left__text h4 {
+  font-family: "poppins";
+  color: #21201e;
+}
+.store__left__text h5 {
+  font-family: "roboto", sans-serif;
+  color: #bdb9b8;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
+
+.store__right {
+  background: url(../img/store-01.jpg) center/cover;
+}
+
+.menu {
+  width: 100%;
+  height: 50vh;
+}
+.menu__up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+}
+.menu__up h3 {
+  color: #a67245;
+  font-family: allura, sans-serif;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.menu__up img {
+  height: 25px;
+  width: 25px;
+  margin: 30px 0;
+}
+.menu__up nav {
+  width: 50%;
+  margin: 0 auto 50px;
+}
+.menu__up nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "roboto", sans-serif;
+  text-transform: capitalize;
+}
+.menu__up nav ul li {
+  display: inline-block;
+  border-bottom: 1px solid #eeeeee;
+  padding: 5px 0;
+}
+.menu__down {
+  background: url(../img/bg-menu-01.jpg) center/cover;
+  min-height: 600px;
+  position: relative;
+}
+.menu__down__card {
+  display: grid;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 9;
+  top: -50px;
+  grid-template-columns: 50% 50%;
+  text-align: left;
+  background: #eeeeee;
+  width: 70%;
+  margin: 0 auto;
+  border-top: 4px solid #a67245;
+  color: #21201e;
+}
+.menu__down__card__line {
+  padding: 20px;
+}
+.menu__down__card__line .plate {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  height: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px dashed #a67245;
+}
+.menu__down__card__line .plate__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: left;
+}
+.menu__down__card__line .plate__description img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.menu__down__card__line .plate__description__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.menu__down__card__line .plate__description__text h4 {
+  text-transform: uppercase;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+}
+.menu__down__card__line .plate__description__text p {
+  font-family: "roboto", sans-serif;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+.menu__down__card__line .plate .price {
+  font-family: "roboto", sans-serif;
+  color: #a67245;
+  text-align: right;
 }/*# sourceMappingURL=index.css.map */
