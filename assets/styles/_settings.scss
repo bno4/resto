@@ -4,8 +4,12 @@
   src: url(../fonts/Allura/Allura-Regular.ttf);
 }
 @font-face {
-  font-family: "roboto";
+  font-family: "roboto-light";
   src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
 }
 @font-face {
   font-family: "poppins";
@@ -13,8 +17,9 @@
 }
 
 $font1: "allura", serif;
-$font2: "roboto", sans-serif;
+$font2: "roboto-light", sans-serif;
 $font3: "poppins", sans-serif;
+$font4: "roboto-bold", sans-serif;
 
 // colors
 $bg-color: #21201e;
@@ -27,6 +32,13 @@ $lightgray: #bdb9b8;
   color: $gold;
   font-family: allura, sans-serif;
   text-transform: capitalize;
+}
+
+@mixin center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 // global
 

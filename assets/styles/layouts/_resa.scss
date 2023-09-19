@@ -1,0 +1,94 @@
+.resa {
+  background: $bg-color;
+  width: 100%;
+  margin: 90px auto;
+  h2 {
+    @include goldTitle;
+    margin-top: 20px;
+  }
+  h3 {
+    font-family: $font3;
+    text-transform: uppercase;
+    line-height: 10px;
+  }
+  h4 {
+    color: $gold;
+    font-family: $font3;
+    text-transform: uppercase;
+    margin: 20px auto 5px;
+  }
+  p {
+    font-family: $font2;
+    font-size: 0.7rem;
+  }
+  img {
+    height: 30px;
+    margin: 20px auto 10px;
+  }
+  &__content {
+    display: grid;
+    width: 80%;
+    max-width: 1000px;
+    grid-template-columns: 30% 70%;
+    margin: 0 auto;
+    background: black;
+    text-align: center;
+
+    &__left {
+      background: black;
+      @include center;
+      border: 1px dashed $white1;
+      margin: 20px;
+    }
+    &__right {
+      background: white;
+      @include center;
+      h3 {
+        color: black;
+      }
+
+      .form {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 0 30px;
+
+        input,
+        select {
+          display: block;
+          width: 100%;
+          min-height: 30px;
+          padding: 0;
+          outline: none;
+          border: 0;
+          border-bottom: 1px solid $lightgray;
+          font-family: arial;
+          color: $lightgray;
+          margin-top: 10px;
+        }
+        #date,
+        #people,
+        #time {
+          color: black;
+          font-size: 0.8rem;
+          font-family: $font2;
+        }
+      }
+      button {
+        display: block;
+        padding: 10px 20px;
+        background-color: $bg-color;
+        color: $white1;
+        border: 0;
+        margin: 30px auto;
+        text-align: center;
+        border-radius: 20px;
+        font-family: $font4;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+      }
+    }
+  }
+}
