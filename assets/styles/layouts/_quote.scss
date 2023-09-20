@@ -1,0 +1,43 @@
+.quote {
+  margin-top: 100px;
+  background: url(/assets/img/gmap.jpg);
+  position: relative;
+  margin-top: 250px;
+  &__content {
+    @include center;
+    background: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    padding: 0 40px 40px;
+    top: -140px;
+    font-family: $font2;
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      position: absolute;
+      top: -35px;
+    }
+    p {
+      color: black;
+
+      margin: 50px auto 30px;
+      line-height: 25px;
+      span {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 1.5rem;
+        font-weight: 900;
+      }
+    }
+    h3 {
+      color: black;
+      line-height: 25px;
+    }
+    h4 {
+      font-size: 1rem;
+      color: $gold;
+    }
+  }
+}
