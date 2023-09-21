@@ -12,14 +12,16 @@ header {
     grid-template-columns: 10% 80% 10%;
     align-items: center;
     @media screen and (max-width: 768px) {
-      width: 50%;
-      grid-template-columns: 50% 0 50%;
+      grid-template-columns: 50% 50%;
     }
     #logo {
       font-family: $font1;
       text-transform: capitalize;
       font-weight: 900;
       font-size: 2rem;
+      @media screen and (max-width: 768px) {
+        font-size: 4rem;
+      }
     }
     ul {
       display: flex;
@@ -27,24 +29,21 @@ header {
       text-transform: uppercase;
       align-items: center;
       gap: 10px;
-
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
       li {
         font-family: $font2;
         font-size: 0.8rem;
       }
-      i {
-        padding: 0 10px;
-      }
-      @media screen and (max-width: 768px) {
-        ul,
-        li {
-          display: none;
-        }
-      }
     }
     .social-icons {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
+      a {
+        display: block;
+        padding: 0 10px;
+      }
     }
   }
   .header-content {
