@@ -46,6 +46,23 @@ header nav {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px 0;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 768px) {
+  header nav {
+    width: 50%;
+    grid-template-columns: 50% 0 50%;
+  }
+}
+header nav #logo {
+  font-family: "allura", serif;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 2rem;
 }
 header nav ul {
   display: -webkit-box;
@@ -58,12 +75,7 @@ header nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-header nav ul #logo {
-  font-family: "allura", serif;
-  text-transform: capitalize;
-  font-weight: 900;
-  font-size: 2rem;
+  gap: 10px;
 }
 header nav ul li {
   font-family: "roboto-light", sans-serif;
@@ -71,6 +83,20 @@ header nav ul li {
 }
 header nav ul i {
   padding: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  header nav ul ul,
+  header nav ul li {
+    display: none;
+  }
+}
+header nav .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 header .header-content {
   display: -webkit-box;
@@ -92,6 +118,8 @@ header .header-content {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   position: absolute;
+  width: 100%;
+  padding: 20px;
 }
 header .header-content h2 {
   font-size: 3rem;
@@ -105,6 +133,11 @@ header .header-content h1 {
   font-family: "poppins", sans-serif;
   text-transform: uppercase;
   margin: 0px 0 0 0;
+}
+@media screen and (max-width: 768px) {
+  header .header-content h1 {
+    font-size: 2rem;
+  }
 }
 header .header-content img {
   margin: 20px auto 30px;
@@ -180,6 +213,17 @@ header .header-content p {
   background: url(/assets/img/store-01.jpg) center/cover;
 }
 
+@media screen and (max-width: 768px) {
+  .store {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .menu {
   width: 100%;
 }
@@ -197,7 +241,7 @@ header .header-content p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px;
+  padding: 100px 40px;
 }
 .menu__up h3 {
   color: #a67245;
@@ -213,7 +257,12 @@ header .header-content p {
 .menu__up nav {
   width: 50%;
   max-width: 1000px;
-  margin: 0 auto 150px;
+  margin: 0 auto 100px;
+}
+@media screen and (max-width: 768px) {
+  .menu__up nav {
+    width: 90%;
+  }
 }
 .menu__up nav ul {
   display: -webkit-box;
@@ -245,6 +294,12 @@ header .header-content p {
   margin: 0 auto;
   border-top: 4px solid #a67245;
   color: #21201e;
+}
+@media screen and (max-width: 768px) {
+  .menu__down__card {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
 }
 .menu__down__card__line {
   padding: 20px;
@@ -343,6 +398,12 @@ header .header-content p {
   background: black;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .resa__content {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+}
 .resa__content__left {
   background: black;
   display: -webkit-box;
@@ -380,12 +441,28 @@ header .header-content p {
 .resa__content__right h3 {
   color: black;
 }
+.resa__content__right form {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
 .resa__content__right .form {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   padding: 0 30px;
+}
+@media screen and (max-width: 768px) {
+  .resa__content__right .form {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.resa__content__right .form div {
+  width: 100%;
 }
 .resa__content__right .form input,
 .resa__content__right .form select {
@@ -437,6 +514,11 @@ header .header-content p {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .events {
+    display: none;
+  }
 }
 .events h4 {
   font-family: "roboto-light";
@@ -617,6 +699,7 @@ header .header-content p {
   margin-top: 100px;
   background: url(/assets/img/gmap.jpg);
   position: relative;
+  min-height: 400px;
   margin-top: 250px;
 }
 .quote__content {
@@ -642,6 +725,11 @@ header .header-content p {
   top: -140px;
   font-family: "roboto-light", sans-serif;
 }
+@media screen and (max-width: 768px) {
+  .quote__content {
+    width: 90%;
+  }
+}
 .quote__content img {
   width: 70px;
   height: 70px;
@@ -652,11 +740,17 @@ header .header-content p {
 .quote__content p {
   color: black;
   margin: 50px auto 30px;
-  line-height: 25px;
+  line-height: 35px;
+}
+@media screen and (max-width: 768px) {
+  .quote__content p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 }
 .quote__content p span {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: 900;
 }
 .quote__content h3 {
@@ -672,14 +766,31 @@ header .header-content p {
   width: 100%;
   background: url(/assets/img/bg-footer.jpg) center/cover;
 }
+@media screen and (max-width: 768px) {
+  .footer {
+    background: none;
+  }
+}
 .footer__content {
   display: grid;
   grid-template-columns: 50% 50%;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 80%;
+}
+@media screen and (max-width: 768px) {
+  .footer__content {
+    grid-template-columns: 1fr;
+    widh: 90%;
+  }
 }
 .footer__content__left {
   padding: 50px;
-  margin-left: 30%;
-  width: 70%;
+}
+@media screen and (max-width: 768px) {
+  .footer__content__left {
+    display: none;
+  }
 }
 .footer__content__left h2 {
   color: #a67245;
@@ -702,6 +813,11 @@ header .header-content p {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .footer__content__right {
+    padding: 40px 0px;
+  }
 }
 .footer__content__right h3 {
   font-family: "roboto-light", sans-serif;
@@ -727,6 +843,11 @@ header .header-content p {
   border: 1px solid #2e2722;
   background: none;
   padding: 5px 10px;
+}
+@media screen and (max-width: 768px) {
+  .footer__content__right .footer-newsletter input {
+    width: 80%;
+  }
 }
 .footer__content__right .footer-social {
   margin-top: 50px;

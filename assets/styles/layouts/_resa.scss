@@ -33,6 +33,10 @@
     margin: 0 auto;
     background: black;
     text-align: center;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      width: 90%;
+    }
 
     &__left {
       background: black;
@@ -46,6 +50,12 @@
       h3 {
         color: black;
       }
+      form {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+      }
 
       .form {
         display: grid;
@@ -53,7 +63,14 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         padding: 0 30px;
-
+        @media screen and (max-width: 768px) {
+          grid-template-columns: 1fr;
+          width: 90%;
+          margin: 0 auto;
+        }
+        div {
+          width: 100%;
+        }
         input,
         select {
           display: block;
