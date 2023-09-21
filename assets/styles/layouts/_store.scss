@@ -1,55 +1,52 @@
 .store {
   display: grid;
   grid-template-columns: 50% 50%;
+  background: $white;
   &__left {
-    background: $white1;
-    &__text {
-      margin: 10px;
-      padding: 20px;
-      border: 1px dashed $gold;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      h2 {
-        @include goldTitle;
-      }
-      h3 {
-        font-family: $font3;
-        color: $bg-color;
-        text-transform: uppercase;
-      }
-      img {
-        margin: 20px auto;
-      }
-      p {
-        font-family: $font2;
-        color: $bg-color;
-        font-size: 0.8rem;
-      }
-      .avatar {
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-      }
-      h4 {
-        font-family: "poppins";
-        color: $bg-color;
-      }
-      h5 {
-        font-family: "roboto", sans-serif;
-        color: $lightgray;
-        text-transform: uppercase;
-        font-size: 0.6rem;
-      }
+    margin: 10px;
+    padding: 20px;
+    border: 1px dashed $color1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h2 {
+      @include goldTitle;
+    }
+    h3 {
+      font-family: $font3;
+      color: $black;
+      text-transform: uppercase;
+    }
+    img {
+      margin: 20px auto;
+    }
+    img:nth-of-type(2) {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+    p {
+      color: $black;
+      font-size: 0.8rem;
+    }
+    h4 {
+      font-family: $font3;
+      color: $black;
+      font-weight: 100;
+    }
+    h5 {
+      font-family: $font2;
+      color: $lightgray;
+      text-transform: uppercase;
+      font-size: 0.7rem;
     }
   }
+  &__right {
+    background: url(../img/store-01.jpg) center/cover;
+  }
 }
-.store__right {
-  background: url(/assets/img/store-01.jpg) center/cover;
-}
-
 @media screen and (max-width: 768px) {
   .store {
     display: flex;

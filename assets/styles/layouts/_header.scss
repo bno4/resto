@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  background: url(/assets/img/bg-slider-06.jpg) center/cover;
+  background: url(../img/bg-slider-06.jpg) center/cover;
   width: 100%;
   position: relative;
   nav {
@@ -16,7 +16,6 @@ header {
     }
     #logo {
       font-family: $font1;
-      text-transform: capitalize;
       font-weight: 900;
       font-size: 2rem;
       @media screen and (max-width: 768px) {
@@ -24,44 +23,40 @@ header {
       }
     }
     ul {
-      display: flex;
-      justify-content: space-between;
+      @include centerChildren(space-around);
       text-transform: uppercase;
-      align-items: center;
       gap: 10px;
+      font-size: 0.7rem;
       @media screen and (max-width: 768px) {
         display: none;
       }
       li {
-        font-family: $font2;
-        font-size: 0.8rem;
+        cursor: pointer;
       }
     }
     .social-icons {
-      display: flex;
-      justify-content: flex-end;
-      a {
-        display: block;
-        padding: 0 10px;
+      @include centerChildren(space-around);
+      font-size: 0.8rem;
+      i {
+        transition: 200ms;
+        &:hover {
+          transform: scale(1.3);
+        }
       }
     }
   }
+
   .header-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    width: 100%;
+    @include center;
+    height: 88vh;
+  }
+  .header-text {
+    margin-top: -100px;
     padding: 20px;
     h2 {
       font-size: 3rem;
       font-family: $font1;
-      color: $gold;
+      color: $color1;
       line-height: 10px;
     }
     h1 {
@@ -75,13 +70,13 @@ header {
       }
     }
     img {
-      margin: 20px auto 30px;
+      margin: 30px 0;
       height: 30px;
     }
     p {
-      font-family: $font2;
       text-transform: uppercase;
       letter-spacing: 5px;
+      margin-top: 10px;
     }
   }
 }

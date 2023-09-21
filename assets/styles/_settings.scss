@@ -22,14 +22,14 @@ $font3: "poppins", sans-serif;
 $font4: "roboto-bold", sans-serif;
 
 // colors
-$bg-color: #21201e;
-$white1: #eeeeee;
-$gold: #a67245;
+$black: #21201e;
+$white: #eeeeee;
+$color1: #a67245;
 $lightgray: #bdb9b8;
 
 // mixins
 @mixin goldTitle {
-  color: $gold;
+  color: $color1;
   font-family: allura, sans-serif;
   text-transform: capitalize;
 }
@@ -39,7 +39,15 @@ $lightgray: #bdb9b8;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
+
+@mixin centerChildren($space) {
+  display: flex;
+  align-items: center;
+  justify-content: $space;
+}
+
 // global
 
 * {
@@ -49,14 +57,15 @@ $lightgray: #bdb9b8;
 }
 
 body {
-  color: $white1;
-  background-color: $bg-color;
+  color: $white;
+  background-color: $black;
+  font-family: $font2;
 }
 
-ul {
+li {
   list-style-type: none;
 }
 a {
   text-decoration: none;
-  color: $white1;
+  color: $white;
 }

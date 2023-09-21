@@ -12,10 +12,10 @@
     width: 80%;
     @media screen and (max-width: 768px) {
       grid-template-columns: 1fr;
-      widh: 90%;
+      width: 90%;
     }
     &__left {
-      padding: 50px;
+      padding: 50px 20px;
       @media screen and (max-width: 768px) {
         display: none;
       }
@@ -31,7 +31,7 @@
       }
     }
     &__right {
-      padding: 50px;
+      padding: 70px 20px 50px;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -40,7 +40,7 @@
       }
       h3 {
         font-family: $font2;
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-transform: uppercase;
       }
       .footer-newsletter {
@@ -57,8 +57,12 @@
           background: none;
           padding: 5px 10px;
           outline: 0;
+          transition: all 200ms;
           &:focus {
-            outline: 1px solid $gold;
+            border: 1px solid $color1;
+            &::placeholder {
+              color: $color1;
+            }
           }
           @media screen and (max-width: 768px) {
             width: 80%;
@@ -67,17 +71,21 @@
       }
       .footer-social {
         margin-top: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: start;
+        margin-right: 0;
+        @include centerChildren(flex-start);
         gap: 10px;
         ul {
           display: flex;
           justify-content: space-between;
           li {
-            a {
+            i {
               padding: 0 10px;
               color: rgba(255, 255, 255, 0.542);
+              transition: 200ms;
+              &:hover {
+                color: $color1;
+                transform: scale(1.2);
+              }
             }
           }
         }
