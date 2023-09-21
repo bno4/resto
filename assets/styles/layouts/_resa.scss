@@ -91,9 +91,6 @@
             border-bottom: 1px solid $color1;
             color: $color1;
             transform: scaleX(1.1);
-            &::placeholder {
-              color: $color1;
-            }
           }
         }
         #date,

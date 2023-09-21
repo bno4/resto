@@ -504,22 +504,6 @@ header .header-text p {
   -webkit-transform: scaleX(1.1);
           transform: scaleX(1.1);
 }
-.resa__content__right .form input:focus::-webkit-input-placeholder, .resa__content__right .form select:focus::-webkit-input-placeholder {
-  color: #a67245;
-}
-.resa__content__right .form input:focus::-moz-placeholder, .resa__content__right .form select:focus::-moz-placeholder {
-  color: #a67245;
-}
-.resa__content__right .form input:focus:-ms-input-placeholder, .resa__content__right .form select:focus:-ms-input-placeholder {
-  color: #a67245;
-}
-.resa__content__right .form input:focus::-ms-input-placeholder, .resa__content__right .form select:focus::-ms-input-placeholder {
-  color: #a67245;
-}
-.resa__content__right .form input:focus::placeholder,
-.resa__content__right .form select:focus::placeholder {
-  color: #a67245;
-}
 .resa__content__right .form #date,
 .resa__content__right .form #people,
 .resa__content__right .form #time {
@@ -631,8 +615,8 @@ header .header-text p {
   background-color: #eeeeee;
 }
 .card__left {
+  width: 150px;
   height: 130px;
-  width: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -648,6 +632,8 @@ header .header-text p {
   width: 100%;
   height: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 .card__left__day {
   display: -webkit-box;
@@ -688,6 +674,15 @@ header .header-text p {
   text-align: left;
   padding: 20px;
   margin-left: 20px;
+}
+.card__right h5 {
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+.card__right h5:hover {
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
 }
 
 .main-card {
@@ -759,7 +754,7 @@ header .header-text p {
 
 .quote {
   margin-top: 100px;
-  background: url(/assets/img/gmap.jpg);
+  background: url(../img/gmap.jpg);
   position: relative;
   min-height: 400px;
   margin-top: 250px;
@@ -827,7 +822,7 @@ header .header-text p {
 
 .footer {
   width: 100%;
-  background: url(/assets/img/bg-footer.jpg) center/cover;
+  background: url(../img/bg-footer.jpg) center/cover;
 }
 @media screen and (max-width: 768px) {
   .footer {
